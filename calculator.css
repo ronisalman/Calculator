@@ -1,1 +1,21 @@
 /* Created by Roni Salman */
+
+#item1{
+	grid-area: zero_;
+}
+
+#item2{
+	grid-area: one;
+}
+
+#item3{
+	grid-area: two;
+}
+
+#container{
+	display: grid;
+
+	grid-template-areas: 
+	"zero_ zero_ zero_"
+	"two one one";
+}
