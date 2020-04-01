@@ -5,17 +5,90 @@
 }
 
 #item2{
-	grid-area: one;
+	grid-area: period;
 }
 
 #item3{
+	grid-area: equal;
+}
+
+#item4{
+	grid-area: minus;
+}
+
+#item5{
+	grid-area: one;
+}
+
+#item6{
 	grid-area: two;
+}
+
+#item7{
+	grid-area: three;
+}
+
+#item8{
+	grid-area: plus;
+}
+
+#item9{
+	grid-area: four;
+}
+
+#item10{
+	grid-area: five;
+}
+
+#item11{
+	grid-area: six;
+}
+
+#item12{
+	grid-area: divide;
+}
+
+#item13{
+	grid-area: seven;
+}
+
+#item14{
+	grid-area: eight;
+}
+
+#item15{
+	grid-area: nine;
+}
+
+#item16{
+	grid-area: times;
 }
 
 #container{
 	display: grid;
 
 	grid-template-areas: 
-	"zero_ zero_ zero_"
-	"two one one";
+	"nine eight seven times"
+	"six five four divide"
+	"three two one plus"
+	"zero_ period equal minus";
+
+	position: absolute;
+
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+
+	top: 30%;
+}
+
+.button{
+	color: white;
+	background-color: lightblue;
+	font-weight: bold;
+	text-align: center;
+}
+
+body{
+	background-color: #C8D2EA;
 }
