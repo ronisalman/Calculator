@@ -64,10 +64,15 @@
 	grid-area: times;
 }
 
+#display{
+	grid-area: display;
+}
+
 #container{
 	display: grid;
 
-	grid-template-areas: 
+	grid-template-areas:
+	"display display display display" 
 	"nine eight seven times"
 	"six five four divide"
 	"three two one plus"
@@ -76,19 +81,35 @@
 	position: absolute;
 
 	left: 50%;
-	margin-left: -150px;
-	width: 300px;
+	margin-left: -250px;
+	height: 500px;
+	width: 500px;
 
-	top: 30%;
+	top: 20%;
+
+	border-style: outset;
+	border-color: #0099cc;
 }
 
 .button{
-	color: white;
+	color: darkblue;
 	background-color: lightblue;
 	font-weight: bold;
 	text-align: center;
+	user-select: none;
+	outline: none;
+	font-size: 30px;
+}
+
+#display{
+	color: darkblue;
+	background-color: white;
+	text-align: right;
+	font-weight: bold;
+	font-size: 40px;
 }
 
 body{
 	background-color: #C8D2EA;
+	font-family: 'Adamina', serif;
 }
