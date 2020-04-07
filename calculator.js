@@ -3,6 +3,8 @@
 const buttons=document.querySelectorAll(".button");
 const display=document.querySelector("#display");
 
+let pressedEqual=false;
+
 
 function buttonResponse(){
 
@@ -13,7 +15,14 @@ function buttonResponse(){
 				calculate(btn);
 			}
 			else{
-				display.innerHTML+=this.innerHTML;
+				if(pressedEqual===false){
+					display.innerHTML+=this.innerHTML;
+				}
+				else{
+					pressedEqual=false;
+					display.innerHTML="";
+					display.innerHTML+=this.innerHTML;
+				}
 			}
 		});
 	}
@@ -22,14 +31,14 @@ function buttonResponse(){
 
 function calculate(btn){
 
+	pressedEqual=true;
+
 	try{
 		const answer=eval(display.innerHTML);
 		display.innerHTML=answer;
-		console.log(answer);
 	}
 	catch(error){
-		display.innerHTML="Input Error"
-		console.log(error);
+		display.innerHTML="Input Error";
 	}
 
 }
