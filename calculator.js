@@ -24,13 +24,14 @@ function calculate(btn){
 
 	try{
 		const answer=eval(display.innerHTML);
+		display.innerHTML=answer;
 		console.log(answer);
 	}
 	catch(error){
+		display.innerHTML="Input Error"
 		console.log(error);
 	}
 
-	display.innerHTML="";
 }
 
 
