@@ -107,6 +107,10 @@
 	text-align: right;
 	font-weight: bold;
 	font-size: 40px;
+
+	line-height: 0px;
+	padding-top: 40px;
+	padding-right: 10px;
 }
 
 body{
