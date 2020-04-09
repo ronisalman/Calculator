@@ -15,6 +15,7 @@ function buttonResponse(){
 				calculate(btn);
 			}
 			else{
+				//making sure equal was not pressed before adding onto existing display
 				if(pressedEqual===false){
 					display.innerHTML+=this.innerHTML;
 				}
@@ -37,6 +38,7 @@ function calculate(btn){
 		const answer=eval(display.innerHTML);
 		display.innerHTML=answer;
 	}
+	//display error message if input calculation is not valid
 	catch(error){
 		display.innerHTML="Input Error";
 	}
